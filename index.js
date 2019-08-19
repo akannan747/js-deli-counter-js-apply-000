@@ -6,9 +6,9 @@ function takeANumber(line, new_customer) {
 let c_number = 0;
 
 function takeANumber2(line) {
-  c_number += 1;
-  line.push(c_number);
-  let response = "Welcome, you are number " + c_number + "!";
+  c_number++;
+  line.push(++c_number);
+  return response = "Welcome, you are number " + c_number + "!";
 }
 
 function nowServing(line) {
