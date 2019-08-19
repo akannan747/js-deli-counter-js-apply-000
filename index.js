@@ -1,14 +1,13 @@
 function takeANumber(line, new_customer) {
-  line.push(new_customer);
-  return "Welcome, " + new_customer + ". You are number " + (line.length).toString() + " in line.";
+  //line.push(new_customer);
+  return "Welcome, " + new_customer + ". You are number " + line.push(new_customer) + " in line.";
 }
 
 let c_number = 0;
 
 function takeANumber2(line) {
-  c_number++;
   line.push(++c_number);
-  return response = "Welcome, you are number " + c_number + "!";
+  return "Welcome, you are number " + c_number + "!";
 }
 
 function nowServing(line) {
