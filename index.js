@@ -3,6 +3,14 @@ function takeANumber(line, new_customer) {
   return "Welcome, " + new_customer + ". You are number " + (line.length).toString() + " in line.";
 }
 
+let c_number = 0;
+
+function takeANumber2(line) {
+  c_number += 1;
+  line.push(c_number);
+  let response = "Welcome, you are number " + c_number + "!";
+}
+
 function nowServing(line) {
   if (line.length === 0) {
     return "There is nobody waiting to be served!";
